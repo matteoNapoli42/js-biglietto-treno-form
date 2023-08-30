@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+
+</head>
+<body class="bg-danger container-fluid">
+    <div class="container-fluid row justify-content-center mx-0 my-5">
+        <h1 class="text-white text-center"> CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <section id="inputCard" class="col-9 bg-white row justify-content-center my-2 mx-0 py-3 rounded">
+
+            <section class="col-10 row justify-content-between text-danger text-center my-3">
+                <div class="col-3"><h6>Nome  Cognome</h6></div>
+                <div class="col-3"><h6>Km da Percorrere</h6></div>
+                <div class="col-3"><h6>Fascia di età</h6></div>
+            </section>
+
+            <section class="col-10 row justify-content-between text-center">
+                <div class="col-3"><input type="text" id="customerName" class="border border-danger border-1"></div>
+                <div class="col-3"><input type="text" id="distance" class="border border-danger border-1"></div>
+                <div class="col-3"><input type="number" id="userAge" class="border border-danger border-1">
+                </div>
+               
+            </section>
+            <section class="text-center mt-4">
+                <button onclick="confirm()" type="button" class="btn bg-secondary text-danger bg-opacity-50 border border-1 border-warning">Genera</button>
+                <button onclick="cancel()" id="cancel" type="button" class="btn bg-secondary text-danger bg-opacity-50">Annulla</button>
+            </section>
+        </section>
+
+        <h3 class="text-white text-center mt-5"> IL TUO BIGLIETTO</h3>
+        <section id="ticket" class="d-none col-9 bg-white row justify-content-center my-3 mx-0 p-2 rounded">
+            <div class="col-3">
+                <h4>DETTAGLI PASSEGGERI</h4>
+            </div>
+
+            <section class="col-12 row my-1 px-0 border border-secondary border-top-1 border-bottom-1 border-start-0 border-end-0">
+                <div class="col-3 py-3 bg-secondary">
+                    <h5>NOME PASSEGGERO</h5>
+                    <div id="name"></div>
+                </div>
+
+                <div class="col-9 pt-3 pb-1 row">
+                    <div class="col-3 d-flex align-content-center flex-column justify-content-between pb-3">
+                        <h5 class="fw-bold mb-4">Offerta</h5>
+                        <p id="ticketType" class="fw-semibold align-bottom m-0"></p>
+                    </div>
+                    <div class="col-3 d-flex align-content-center flex-column justify-content-between pb-3">
+                        <h5 class="fw-bold mb-4">Carrozza</h5>
+                        <p  id="cabina" class="fw-semibold align-bottom m-0"></p>
+                    </div>
+                    <div class="col-3 d-flex align-content-center flex-column justify-content-between pb-3">
+                        <h5 class="fw-bold mb-4">Codice CP</h5>
+                        <p  id="cpCode" class="fw-semibold align-bottom m-0"></p>
+                    </div>
+                    <div class="col-3 d-flex align-content-center flex-column justify-content-between pb-3">
+                        <h5 class="fw-bold mb-4">Costo Biglietto</h5>
+                        <p id="finalPrice"  class="fw-semibold align-bottom m-0"></p>
+                    </div>
+                    
+                    
+                </div>
+                
+            </section>
+           
+           
+        </section>
+
+    </div>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
